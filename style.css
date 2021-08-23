@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 600px;
+    height: 660px;
+    padding: 0 20px;
+}
+
+h1, p {
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#survey-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="email"], input[type="number"], button, select {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    width: 250px;
+    height: 36px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+input:empty {
+    color: #4B5563;
+}
+
+#submit {
+    background-color: white;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+#submit:hover {
+    background-color: #E5E7EB;
+}
+
+#dropdown {
+    cursor: pointer;
+}
+
+#dropdown option {
+    box-shadow: none;
+    width: 250px;
+}
+
+#dropdown option:first-of-type {
+    border-radius: 0 5px 5px 0;
+    border: 1px solid black;
+}
+
+textarea {
+    margin: 2rem 0;
+    font-size: 1rem;
+    min-width: 320px;
+    min-height: 72px;
+}
+
+textarea:empty {
+    color: #4B5563;
+}
+
+h4 {
+    margin-bottom: 0.75rem;
+}
+
+button[type="submit"] {
+    padding: 0.25rem 1rem;
+}
+
+#checkbox-container, #radio-container {
+    width: 250px;
+}
+
+
+@media screen and (max-width: 555px) {
+    #radio-container {
+        margin-bottom: 1rem;
+    }
+}

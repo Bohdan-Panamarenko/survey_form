@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surver form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1 id="title">Survey form</h1>
+        <p id="description">
+            There is a simple form that provides you a possibility<br>
+            to explain information about yourself
+        </p>
+    
+        <form action="post" id="survey-form">
+    
+            <div>
+
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your name">
+
+            </div>
+    
+            <div>
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your email">
+
+            </div>
+    
+            <div>
+
+                <label for="numbserifer" id="number-label">Age</label>
+                <input type="number" min="1" max="100" name="age" id="number" placeholder="Your age">
+
+            </div>
+    
+            <div>
+
+                <label for="dropdown">Your sex</label>
+                <select name="sex" id="dropdown">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </div>
+    
+            <div id="radio-container">
+    
+                <label>Choose your job state</label>
+    
+                <div class="radio">
+                    <input type="radio" name="job-state" id="employed">
+                    <label for="employed">Employed</label>
+                </div>
+        
+                <div class="radio">
+                    <input type="radio" name="job-state" id="unemployed">
+                    <label for="unemployed">Unemployed</label>
+                </div>
+        
+                <div class="radio">
+                    <input type="radio" name="job-state" id="freelance">
+                    <label for="freelance">Freelance</label>
+                </div>
+    
+            </div>
+    
+            <div id="checkbox-container">
+    
+                <label>Choose your skills</label>
+    
+                <div class="checkbox">
+                    <input type="checkbox" name="skills" id="linux" value="linux">
+                    <label for="linux">Linux</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input type="checkbox" name="skills" id="figma" value="figma">
+                    <label for="figma">Figma</label>
+                </div>
+        
+                <div class="checkbox">
+                    <input type="checkbox" name="skills" id="bash" value="bash">
+                    <label for="bash">Bash</label>
+                </div>
+    
+            </div>
+    
+            <textarea name="textarea" id="texarea" cols="30" rows="5" placeholder="Put your comments here"></textarea>
+    
+            <button type="submit" id="submit">Submit</button>
+            
+        </form>
+        
+    </main>
+
+
+</body>
+</html>
